@@ -1,0 +1,87 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* or 100vh depending on your layout */
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: gray;
+}
+
+.projects {
+  padding-left: 10px;
+  justify-content: center;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.list a {
+  border-style: inset;
+  padding: 16px;
+}
+.list a:hover {
+  color: gray;
+}
+
+.work-experiences {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 16px;
+}
+
+.projects,
+.work-experiences,
+.education {
+  flex: 1;
+  padding: 16px;
+}
+
+.work-experience,
+.opensource-work {
+  flex: 1; /* take equal width */
+  padding: 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+.education ul {
+  margin-left: 16px;
+}
+
+.sign {
+  margin: 16px;
+}
+.reviews {
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+  padding: 16px;
+  width: 100%;
+}
+.review1,
+.review2,
+.review3 {
+  flex: 1;
+  padding: 16px;
+  margin: 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="../css/index.css" />
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <header>
+    <div id="nav-bar"></div>
+  </header>
+  <body>
+    <div class="hero">
+      <h1>Frontend Developer</h1>
+    </div>
+  </body>
+  <script>
+    fetch("../Components/navbar.html")
+      .then((res) => res.text())
+      .then((html) => {
+        document.getElementById("nav-bar").innerHTML = html;
+      });
+  </script>
+</html>
